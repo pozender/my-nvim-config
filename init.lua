@@ -10,13 +10,13 @@
 
 require("pozender.lazy")
 
-local status_ok, core = pcall(require, "pozender.core.init")
+local status_ok, core = pcall(require, "pozender.core")
 if not status_ok then
   print("Erreur lors du chargement de pozender.core: " .. core)
   return
 end
 
-local status_ok, plugins = pcall(require, "pozender.plugins.init")
+local status_ok, plugins = pcall(require, "pozender.plugins")
 if not status_ok then
   print("Erreur lors du chargement de pozender.plugins: " .. plugins)
   return
