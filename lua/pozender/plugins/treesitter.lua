@@ -12,7 +12,6 @@ require("nvim-treesitter.configs").setup({
     "javascript",
     "tsx",
     "css",
-    "jsx",
     "html",
   },
 
